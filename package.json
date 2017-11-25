@@ -29,6 +29,9 @@
   "devDependencies": {},
   "files": [
     ".example.db",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE",
     "bin/",
     "src/"
   ]
