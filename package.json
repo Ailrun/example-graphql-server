@@ -1,0 +1,35 @@
+{
+  "name": "@ailrun/example-graphql-server",
+  "version": "1.0.2",
+  "main": "index.js",
+  "bin": "bin/example",
+  "repository": {
+    "url": "https://github.com/ailrun/example-graphql-server",
+    "type": "git"
+  },
+  "author": {
+    "name": "Junyoung Clare Jang",
+    "email": "jjc9310@gmail.com"
+  },
+  "license": "MIT",
+  "scripts": {
+    "start": "node bin/example"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "express": "^4.16.2",
+    "express-graphql": "^0.6.11",
+    "fs-extra": "^4.0.2",
+    "graphql": "^0.11.7",
+    "graphql-playground-middleware-express": "^1.2.0",
+    "graphql-subscriptions": "^0.5.5",
+    "nedb": "^1.8.0",
+    "subscriptions-transport-ws": "^0.9.1"
+  },
+  "devDependencies": {},
+  "files": [
+    ".example.db",
+    "bin/",
+    "src/"
+  ]
+}
