@@ -1,5 +1,7 @@
 const makeHttpServer = (expressApp, http) => {
-  return http.createServer(expressApp)
+  const httpServer = http.createServer(expressApp)
+
+  return httpServer
 }
 
 module.exports = makeHttpServer

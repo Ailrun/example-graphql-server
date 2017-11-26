@@ -1,5 +1,7 @@
 const makeExpressApp = (
-  express, graphqlMiddleware, playgroundMiddleware, routes
+  express,
+  graphqlMiddleware, playgroundMiddleware,
+  routes
 ) => {
   const app = express()
 
