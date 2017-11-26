@@ -21,10 +21,6 @@ const makeDatabase = (fs, nedb, path, process, promisify) => {
         .then((results) => results[0])
     },
     findOne() {
-      console.log('hi')
-      console.log(arguments)
-      console.log(promisify.toString())
-
       return promisify((...args) => {
         rawDB.findOne(...args)
       }, arguments)
