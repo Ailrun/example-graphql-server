@@ -1,3 +1,13 @@
+## v1.1.2
+### Release Date: 2017/11/26
+
+### Added
+- Logger for graphql requests
+### Fixed
+> Nothing
+### Misc
+- Change styles
+
 ## v1.1.1
 ### Release Date: 2017/11/25
 
