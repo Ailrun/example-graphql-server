@@ -8,7 +8,7 @@ const makePostType = (
   const PostType = new GraphQLObjectType({
     name: 'Post',
     fields: () => ({
-      uuid: {
+      id: {
         type: new GraphQLNonNull(GraphQLString),
         resolve(src) {
           return src._id

@@ -3,9 +3,9 @@
 ### Added
 > Nothing
 ### Deleted
-- User does not have 'point' property in DB
+- User does not have `point` property in DB
 ### Fixed
-> Nothing
+- `uuid` is renamed to `id` to be compatible with graphql client caching
 ### Misc
 > Nothing
 
@@ -37,14 +37,14 @@
 ### Release Date: 2017/11/26
 
 ### Added
-- Post and comment types are added
-- Now uuid of each type is queryable
+- `Post` and `Comment` types are added
+- Now `uuid` of each type is queryable
 ### Deleted
 > Nothing
 ### Fixed
 - Undefined context in subscription is fixed
 ### Misc
-- Server depends on lodash
+- Server depends on **lodash**
 
 ## v1.1.2
 ### Release Date: 2017/11/26

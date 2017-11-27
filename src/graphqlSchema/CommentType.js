@@ -8,7 +8,7 @@ const makeCommentType = (
   const CommentType = new GraphQLObjectType({
     name: 'Comment',
     fields: () => ({
-      uuid: {
+      id: {
         type: new GraphQLNonNull(GraphQLString),
         resolve(src) {
           return src._id

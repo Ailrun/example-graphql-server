@@ -16,9 +16,9 @@ const makeMutationType = (
     },
   }
   const updateUserArgs = {
-    uuid: {
+    id: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of user'
+      description: 'The id of user'
     },
     name: {
       type: GraphQLString,
@@ -30,7 +30,7 @@ const makeMutationType = (
   const createPostArgs = {
     author: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of author'
+      description: 'The id of author'
     },
     title: {
       type: new GraphQLNonNull(GraphQLString),
@@ -40,9 +40,9 @@ const makeMutationType = (
     },
   }
   const updatePostArgs = {
-    uuid: {
+    id: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of post'
+      description: 'The id of post'
     },
     title: {
       type: GraphQLString,
@@ -54,20 +54,20 @@ const makeMutationType = (
   const createCommentArgs = {
     author: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of author'
+      description: 'The id of author'
     },
     post: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of post'
+      description: 'The id of post'
     },
     contents: {
       type: GraphQLString,
     },
   }
   const updateCommentArgs = {
-    uuid: {
+    id: {
       type: new GraphQLNonNull(GraphQLString),
-      description: 'The uuid of comment'
+      description: 'The id of comment'
     },
     contents: {
       type: GraphQLString,
@@ -95,9 +95,9 @@ const makeMutationType = (
         args: updateUserArgs,
         async resolve(_src, args, ctx) {
           const user = await ctx.update({
-            type: 'USER', _id: args.uuid,
+            type: 'USER', _id: args.id,
           }, {
-            $set: _.omit(args, 'uuid'),
+            $set: _.omit(args, 'id'),
           })
 
           pubsub.publish('USER/updated', user)
@@ -133,9 +133,9 @@ const makeMutationType = (
         args: updatePostArgs,
         async resolve(_src, args, ctx) {
           const post = await ctx.update({
-            type: 'POST', _id: args.uuid,
+            type: 'POST', _id: args.id,
           }, {
-            $set: _.omit(args, 'uuid'),
+            $set: _.omit(args, 'id'),
           })
 
           pubsub.publish('POST/updated', post)
@@ -179,9 +179,9 @@ const makeMutationType = (
         args: updateCommentArgs,
         async resolve(_src, args, ctx) {
           const comment = await ctx.update({
-            type: 'COMMENT', _id: args.uuid,
+            type: 'COMMENT', _id: args.id,
           }, {
-            $set: _.omit(args, 'uuid'),
+            $set: _.omit(args, 'id'),
           });
 
           pubsub.publish('COMMENT/updated', comment)

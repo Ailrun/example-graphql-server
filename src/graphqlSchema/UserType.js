@@ -8,7 +8,7 @@ const makeUserType = (
   const UserType = new GraphQLObjectType({
     name: 'User',
     fields: () => ({
-      uuid: {
+      id: {
         type: new GraphQLNonNull(GraphQLString),
         resolve(src) {
           return src._id

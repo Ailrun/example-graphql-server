@@ -6,19 +6,19 @@ const makeQueryType = (
   Types
 ) => {
   const userArgs = {
-    uuid: {
+    id: {
       type: new GraphQLNonNull(GraphQLString),
     },
   }
   const postArgs = {
-    uuid: {
+    id: {
       type: new GraphQLNonNull(GraphQLString),
     },
   }
   const postsArgs = {
     author: {
       type: GraphQLString,
-      description: "The uuid of author"
+      description: "The id of author"
     },
   }
   
@@ -29,7 +29,7 @@ const makeQueryType = (
         type: Types.UserType,
         args: userArgs,
         resolve(_src, args, ctx) {
-          return ctx.findOne({ type: 'USER', _id: args.uuid })
+          return ctx.findOne({ type: 'USER', _id: args.id })
         },
       },
       users: {
@@ -42,7 +42,7 @@ const makeQueryType = (
         type: Types.PostType,
         args: postArgs,
         resolve(_src, args, ctx) {
-          return ctx.findOne({ type: 'POST', _id: args.uuid })
+          return ctx.findOne({ type: 'POST', _id: args.id })
         },
       },
       posts: {
