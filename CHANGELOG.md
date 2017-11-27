@@ -1,5 +1,15 @@
 ## Unreleased
 
+## v1.3.0
+### Release Date: 2017/11/27
+
+### Added
+- Now CORS request is supported
+### Fixed
+> Nothing
+### Misc
+- More example data is added
+
 ## v1.2.1
 ### Release Date: 2017/11/26
 
