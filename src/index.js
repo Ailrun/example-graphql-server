@@ -4,6 +4,7 @@ const process = require('process')
 const EventEmitter = require('events')
 
 const chalk = require('chalk')
+const cors = require('cors')
 const express = require('express')
 const fs = require('fs-extra')
 const graphqlHTTP = require('express-graphql')
@@ -41,7 +42,7 @@ const playgroundMiddleware =
   makePlaygroundMiddleware(graphqlPlayground, routes)
 const expressServer =
   makeExpressServer(
-    express,
+    express, cors,
     graphqlMiddleware, playgroundMiddleware,
     routes
   )

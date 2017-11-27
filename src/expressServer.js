@@ -1,12 +1,12 @@
 const makeExpressApp = (
-  express,
+  express, cors,
   graphqlMiddleware, playgroundMiddleware,
   routes
 ) => {
   const app = express()
 
   return app
-    .use(routes.graphql, graphqlMiddleware)
+    .use(routes.graphql, cors(), graphqlMiddleware)
     .use(routes.playground, playgroundMiddleware)
 }
 
