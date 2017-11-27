@@ -1,11 +1,11 @@
 const makeSchema = (
   { GraphQLSchema },
-  QueryType, MutationType, SubscriptionType
+  Types
 ) => {
   const schema = new GraphQLSchema({
-    query: QueryType,
-    mutation: MutationType,
-    subscription: SubscriptionType,
+    query: Types.QueryType,
+    mutation: Types.MutationType,
+    subscription: Types.SubscriptionType,
   })
 
   return schema

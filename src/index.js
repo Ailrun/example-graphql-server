@@ -11,6 +11,7 @@ const graphql = require('graphql')
 const graphqlPlayground =
       require('graphql-playground-middleware-express').default
 const { PubSub } = require('graphql-subscriptions')
+const _ = require('lodash')
 const nedb = require('nedb')
 const { SubscriptionServer } = require('subscriptions-transport-ws')
 
@@ -30,7 +31,7 @@ const makeSubscriptionServer = require('./subscriptionServer')
 const promisify = makePromisify()
 const database = makeDatabase(fs, nedb, path, process, promisify)
 
-const graphqlSchema = makeGraphqlSchema(graphql, EventEmitter, PubSub)
+const graphqlSchema = makeGraphqlSchema(_, graphql, EventEmitter, PubSub)
 const graphqlLogger = makeGraphqlLogger(chalk)
 const graphqlMiddleware =
   makeGraphqlMiddleware(graphqlHTTP, graphqlLogger, graphqlSchema, database)

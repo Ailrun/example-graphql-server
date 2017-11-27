@@ -1,12 +1,19 @@
 const makeUserType = (
   {
     GraphQLObjectType,
-    GraphQLInt, GraphQLNonNull, GraphQLString,
-  }
+    GraphQLInt, GraphQLList, GraphQLNonNull, GraphQLString,
+  },
+  Types
 ) => {
   const UserType = new GraphQLObjectType({
     name: 'User',
-    fields: {
+    fields: () => ({
+      uuid: {
+        type: new GraphQLNonNull(GraphQLString),
+        resolve(src) {
+          return src._id
+        },
+      },
       name: {
         type: new GraphQLNonNull(GraphQLString),
         resolve(src) {
@@ -19,13 +26,19 @@ const makeUserType = (
           return src.email
         },
       },
-      point: {
-        type: new GraphQLNonNull(GraphQLInt),
-        resolve(src) {
-          return src.point
+      posts: {
+        type: new GraphQLList(Types.PostType),
+        resolve(src, _args, ctx) {
+          return ctx.find({ type: 'POST', authorId: src._id })
         }
       },
-    },
+      signUpAt: {
+        type: new GraphQLNonNull(GraphQLString),
+        resolve(src) {
+          return src.createdAt
+        },
+      },
+    }),
   })
 
   return UserType

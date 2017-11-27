@@ -4,23 +4,41 @@ const makeSubscriptionType = (
     GraphQLList, GraphQLNonNull, GraphQLString,
   },
   pubsub,
-  UserType
+  Types
 ) => {
   let subed = false;
 
   const SubscriptionType = new GraphQLObjectType({
     name: 'Subscription',
-    fields: {
+    fields: () => ({
       creationOfUser: {
-        type: UserType,
+        type: Types.UserType,
         resolve(src) {
           return src
         },
         subscribe() {
-          return pubsub.asyncIterator('user/created')
-        }
+          return pubsub.asyncIterator('USER/created')
+        },
       },
-    },
+      creationOfPost: {
+        type: Types.PostType,
+        resolve(src) {
+          return src
+        },
+        subscribe() {
+          return pubsub.asyncIterator('POST/created')
+        },
+      },
+      creationOfComment: {
+        type: Types.CommentType,
+        resolve(src) {
+          return src
+        },
+        subscribe() {
+          return pubsub.asyncIterator('COMMENT/created')
+        },
+      },
+    }),
   })
 
   return SubscriptionType

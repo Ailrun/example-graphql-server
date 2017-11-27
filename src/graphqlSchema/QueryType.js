@@ -3,31 +3,60 @@ const makeQueryType = (
     GraphQLObjectType,
     GraphQLList, GraphQLNonNull, GraphQLString,
   },
-  UserType
+  Types
 ) => {
-  const UserArgs = {
-    email: {
+  const userArgs = {
+    uuid: {
       type: new GraphQLNonNull(GraphQLString),
-    }
+    },
   }
-
+  const postArgs = {
+    uuid: {
+      type: new GraphQLNonNull(GraphQLString),
+    },
+  }
+  const postsArgs = {
+    author: {
+      type: GraphQLString,
+      description: "The uuid of author"
+    },
+  }
+  
   const QueryType = new GraphQLObjectType({
     name: 'Query',
-    fields: {
+    fields: () => ({
       user: {
-        type: UserType,
-        args: UserArgs,
+        type: Types.UserType,
+        args: userArgs,
         resolve(_src, args, ctx) {
-          return ctx.findOne({ type: 'USER', email: args.email })
-        }
+          return ctx.findOne({ type: 'USER', _id: args.uuid })
+        },
       },
       users: {
-        type: new GraphQLList(UserType),
+        type: new GraphQLList(Types.UserType),
         resolve(_src, _args, ctx) {
           return ctx.find({ type: 'USER' })
         },
       },
-    },
+      post: {
+        type: Types.PostType,
+        args: postArgs,
+        resolve(_src, args, ctx) {
+          return ctx.findOne({ type: 'POST', _id: args.uuid })
+        },
+      },
+      posts: {
+        type: new GraphQLList(Types.PostType),
+        args: postsArgs,
+        resolve(_src, args, ctx) {
+          if (args.author) {
+            return ctx.find({ type: 'POST', authorId: args.author })
+          } else {
+            return ctx.find({ type: 'POST' })
+          }
+        },
+      },
+    }),
   })
 
   return QueryType
