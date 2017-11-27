@@ -17,7 +17,6 @@ const makeCommentType = (
       author: {
         type: Types.UserType,
         resolve(src, _args, ctx) {
-          console.log(ctx)
           return ctx.findOne({ type: 'USER', _id: src.authorId })
         },
       },
