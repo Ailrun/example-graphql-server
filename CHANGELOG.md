@@ -1,10 +1,21 @@
 ## Unreleased
 
+### Added
+> Nothing
+### Deleted
+- User does not have 'point' property in DB
+### Fixed
+> Nothing
+### Misc
+> Nothing
+
 ## v1.3.0
 ### Release Date: 2017/11/27
 
 ### Added
 - Now CORS request is supported
+### Deleted
+> Nothing
 ### Fixed
 > Nothing
 ### Misc
@@ -14,6 +25,8 @@
 ### Release Date: 2017/11/26
 
 ### Added
+> Nothing
+### Deleted
 > Nothing
 ### Fixed
 > Nothing
@@ -26,6 +39,8 @@
 ### Added
 - Post and comment types are added
 - Now uuid of each type is queryable
+### Deleted
+> Nothing
 ### Fixed
 - Undefined context in subscription is fixed
 ### Misc
@@ -36,6 +51,8 @@
 
 ### Added
 - Logger for graphql requests is added
+### Deleted
+> Nothing
 ### Fixed
 > Nothing
 ### Misc
@@ -45,6 +62,8 @@
 ### Release Date: 2017/11/25
 
 ### Added
+> Nothing
+### Deleted
 > Nothing
 ### Fixed
 > Nothing
@@ -56,6 +75,8 @@
 
 ### Added
 - Example for subscription query is added
+### Deleted
+> Nothing
 ### Fixed
 > Nothing
 ### Misc

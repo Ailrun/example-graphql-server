@@ -1,11 +1,11 @@
+{"type":"POST","authorId":"HZvJmgSz83jfhoYP","title":"Goodbye couple","contents":"Kick him off","_id":"0HVw80VSPCafA0LD","createdAt":{"$$date":1511767457305},"updatedAt":{"$$date":1511767457305}}
 {"type":"COMMENT","authorId":"NcupFzQjjOPUcIZ1","postId":"siFjxgasipl8PmaV","contents":"Bark","_id":"98IQtZbBCAfalfDL","createdAt":{"$$date":1511749972507},"updatedAt":{"$$date":1511749972507}}
-{"name":"Seonghyun Park","email":"ing-eo-king@mawang.com","point":9000,"type":"USER","_id":"HOWaXm6XoPZb8Dut","createdAt":{"$$date":1511586270320},"updatedAt":{"$$date":1511586270320}}
-{"name":"Jeong Hyun Ahn","email":"heeojiseyo@facebook.mosol","point":8474,"type":"USER","_id":"HZvJmgSz83jfhoYP","createdAt":{"$$date":1511586270320},"updatedAt":{"$$date":1511586270320}}
-{"name":"Junyoung Clare Jang","email":"jjc9310@mayvalid.email","point":544,"type":"USER","_id":"NcupFzQjjOPUcIZ1","createdAt":{"$$date":1511586270319},"updatedAt":{"$$date":1511586270319}}
+{"name":"Seonghyun Park","email":"ing-eo-king@mawang.com","type":"USER","_id":"HOWaXm6XoPZb8Dut","createdAt":{"$$date":1511586270320},"updatedAt":{"$$date":1511586270320}}
+{"name":"Jeong Hyun Ahn","email":"heeojiseyo@facebook.mosol","type":"USER","_id":"HZvJmgSz83jfhoYP","createdAt":{"$$date":1511586270320},"updatedAt":{"$$date":1511586270320}}
+{"name":"Junyoung Clare Jang","email":"jjc9310@mayvalid.email","type":"USER","_id":"NcupFzQjjOPUcIZ1","createdAt":{"$$date":1511586270319},"updatedAt":{"$$date":1511586270319}}
 {"type":"COMMENT","authorId":"NcupFzQjjOPUcIZ1","postId":"siFjxgasipl8PmaV","contents":"Is there anyone?","_id":"RHoaG8It98GiyEoo","createdAt":{"$$date":1511749774909},"updatedAt":{"$$date":1511749774909}}
 {"type":"COMMENT","authorId":"HOWaXm6XoPZb8Dut","postId":"siFjxgasipl8PmaV","contents":"This is comment","_id":"RwYPgqTMLqqd1WXQ","createdAt":{"$$date":1511748848107},"updatedAt":{"$$date":1511748848107}}
 {"type":"COMMENT","authorId":"NcupFzQjjOPUcIZ1","postId":"siFjxgasipl8PmaV","contents":"Hi I'm comment!!!","_id":"eMR6a0qVQPJsD4Ur","createdAt":{"$$date":1511749227005},"updatedAt":{"$$date":1511749227005}}
 {"type":"COMMENT","authorId":"HOWaXm6XoPZb8Dut","postId":"siFjxgasipl8PmaV","contents":"Hello!","_id":"ma5jY8mlArtBdIl2","createdAt":{"$$date":1511748823405},"updatedAt":{"$$date":1511748823405}}
 {"type":"POST","authorId":"NcupFzQjjOPUcIZ1","title":"GraphQL introduction","contents":"Use GraphQL!!!","_id":"siFjxgasipl8PmaV","createdAt":{"$$date":1511747804185},"updatedAt":{"$$date":1511747804185}}
-{"type":"POST","authorId":"HZvJmgSz83jfhoYP","title":"Goodbye couple","contents":"Kick him off","_id":"0HVw80VSPCafA0LD","createdAt":{"$$date":1511767457305},"updatedAt":{"$$date":1511767457305}}
 {"type":"POST","authorId":"HZvJmgSz83jfhoYP","title":"From Couple to Solo","contents":"There's no king's way","_id":"uKjHB08j34jjizzV","createdAt":{"$$date":1511767501555},"updatedAt":{"$$date":1511767501555}}

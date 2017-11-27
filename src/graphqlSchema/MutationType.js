@@ -14,9 +14,6 @@ const makeMutationType = (
     name: {
       type: new GraphQLNonNull(GraphQLString),
     },
-    point: {
-      type: new GraphQLNonNull(GraphQLInt),
-    },
   }
   const updateUserArgs = {
     uuid: {
