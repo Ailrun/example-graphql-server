@@ -3,6 +3,18 @@
 ### Added
 > Nothing
 ### Deleted
+> Nothing
+### Fixed
+> Nothing
+### Misc
+> Nothing
+
+## v1.4.0
+### Release Date: 2017/11/27
+
+### Added
+> Nothing
+### Deleted
 - User does not have `point` property in DB
 ### Fixed
 - `uuid` is renamed to `id` to be compatible with graphql client caching
