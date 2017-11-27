@@ -1,5 +1,15 @@
 ## Unreleased
 
+## v1.2.1
+### Release Date: 2017/11/26
+
+### Added
+> Nothing
+### Fixed
+> Nothing
+### Misc
+- Remove debug log
+
 ## v1.2.0
 ### Release Date: 2017/11/26
 
