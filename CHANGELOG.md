@@ -1,12 +1,25 @@
+## Unreleased
+
+## v1.2.0
+### Release Date: 2017/11/26
+
+### Added
+- Post and comment types are added
+- Now uuid of each type is queryable
+### Fixed
+- Undefined context in subscription is fixed
+### Misc
+- Server depends on lodash
+
 ## v1.1.2
 ### Release Date: 2017/11/26
 
 ### Added
-- Logger for graphql requests
+- Logger for graphql requests is added
 ### Fixed
 > Nothing
 ### Misc
-- Change styles
+- Code styles is changed
 
 ## v1.1.1
 ### Release Date: 2017/11/25
@@ -16,13 +29,13 @@
 ### Fixed
 > Nothing
 ### Misc
-- Link with Github
+- Package is linked with Github
 
 ## v1.1.0
 ### Release Date: 2017/11/25
 
 ### Added
-- Add example for subscription query
+- Example for subscription query is added
 ### Fixed
 > Nothing
 ### Misc
