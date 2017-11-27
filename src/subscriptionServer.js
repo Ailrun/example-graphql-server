@@ -1,12 +1,15 @@
 const makeSubscriptionServer = (
   { execute, subscribe },
-  httpServer, routes, schema, subscriptionLogger,
+  database, httpServer, routes, schema, subscriptionLogger,
   SubscriptionServer
 ) => {
   const subscriptionServer = new SubscriptionServer({
     execute,
     schema,
-    subscribe,
+    subscribe(schema, doc, root, _ctx, variables, operationName) {
+      return subscribe(schema, doc, root, database, variables, operationName)
+    },
+    context: database,
     ...subscriptionLogger,
   }, {
     server: httpServer,

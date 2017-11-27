@@ -34,7 +34,7 @@ const database = makeDatabase(fs, nedb, path, process, promisify)
 const graphqlSchema = makeGraphqlSchema(_, graphql, EventEmitter, PubSub)
 const graphqlLogger = makeGraphqlLogger(chalk)
 const graphqlMiddleware =
-  makeGraphqlMiddleware(graphqlHTTP, graphqlLogger, graphqlSchema, database)
+  makeGraphqlMiddleware(database, graphqlHTTP, graphqlLogger, graphqlSchema)
 
 const routes = makeRoutes()
 const playgroundMiddleware =
@@ -52,7 +52,7 @@ const subscriptionLogger = makeSubscriptionLogger(chalk)
 const subscriptionServer =
   makeSubscriptionServer(
     graphql,
-    httpServer, routes, graphqlSchema, subscriptionLogger,
+    database, httpServer, routes, graphqlSchema, subscriptionLogger,
     SubscriptionServer
   )
 

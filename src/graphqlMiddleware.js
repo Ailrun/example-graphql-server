@@ -1,4 +1,4 @@
-const makeGraphqlMiddleware = (graphqlHTTP, gqlLogger, schema, database) => {
+const makeGraphqlMiddleware = (database, graphqlHTTP, gqlLogger, schema) => {
   return graphqlHTTP((req, res, gqlParams) => {
     gqlLogger.preLogger(req)
 
