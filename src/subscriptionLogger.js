@@ -12,14 +12,11 @@ const makeSubscriptionLogger = (chalk) => {
           `$1"...complex query...(${gqlParams.query.length} characters)",$2`
         )
     }
-    console.log(
-      chalk.bold(
-        chalk.white(' via ') + chalk.green(protocol) + '\n' +
-        '. subscribed from ' + chalk.green(remoteAddress) + '\n' +
-        '. with ' + chalk.yellow('GraphQL parameters') +
-        ' = ' + chalk.yellow(gqlParamsString)
-      ) + chalk.reset('') 
-    )
+    console.log(chalk.bold(
+      chalk` via {green ${protocol}}
+. subscribed from {green ${remoteAddress}}
+. with {yellow GraphQL parameters} = {yellow ${gqlParamsString}}`
+    ))
 
     return gqlParams
   }
@@ -28,24 +25,20 @@ const makeSubscriptionLogger = (chalk) => {
     const { protocol, upgradeReq } = ws
     const { url, socket } = upgradeReq
     const { remoteAddress } = socket
-    console.log(
-      chalk.bold(
-        chalk.white(' via ') + chalk.green(protocol) + '\n' +
-        '. connected from ' + chalk.green(remoteAddress) + '\n'
-      ) + chalk.reset('')
-    )
+    console.log(chalk.bold(
+      chalk` via {green ${protocol}}
+. connected from {green ${remoteAddress}}`
+    ))
   }
 
   const onDisconnect = (ws) => {
     const { protocol, upgradeReq } = ws
     const { url, socket } = upgradeReq
     const { remoteAddress } = socket
-    console.log(
-      chalk.bold(
-        chalk.white(' via ') + chalk.green(protocol) + '\n' +
-        '. disconnected from ' + chalk.green(remoteAddress) + '\n'
-      ) + chalk.reset('')
-    )
+    console.log(chalk.bold(
+      chalk` via {green ${protocol}}
+. disconnected from {green ${remoteAddress}}`
+    ))
   }
 
   const subscriptionLogger = {

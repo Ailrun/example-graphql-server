@@ -1,12 +1,9 @@
 const makeGraphqlLogger = (chalk) => {
   const preLogger = ({ ip, method, path, protocol }) => {
-    console.log(
-      chalk.bold(
-        chalk.white(method) + ' ' + chalk.green(path) +
-        ' via ' + chalk.green(protocol) + '\n' +
-        '. requested from ' + chalk.green(`${ip}`)
-      ) + chalk.reset('')
-    )
+    console.log(chalk.bold(
+      chalk`${method} {green ${path}} via {green ${protocol}}
+. requested from {green ${ip}}`
+    ))
   }
 
   const postLogger = (gqlParams) => {
@@ -20,12 +17,9 @@ const makeGraphqlLogger = (chalk) => {
           `$1"...complex query...(${gqlParams.query.length} characters)",$2`
         )
     }
-    console.log(
-      chalk.bold(
-        '. with ' + chalk.yellow('GraphQL parameters') +
-        ' = ' + chalk.yellow(gqlParamsString)
-      ) + chalk.reset('')
-    )
+    console.log(chalk.bold(
+      chalk`. with {yellow GraphQL parameters} = {yellow ${gqlParamsString}}`
+    ))
   }
 
   const graphqlLogger = {
