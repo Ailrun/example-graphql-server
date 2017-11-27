@@ -6,6 +6,7 @@
 - User does not have `point` property in DB
 ### Fixed
 - `uuid` is renamed to `id` to be compatible with graphql client caching
+- Undefined context in query via ws is fixed
 ### Misc
 > Nothing
 

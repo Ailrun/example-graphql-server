@@ -4,7 +4,9 @@ const makeSubscriptionServer = (
   SubscriptionServer
 ) => {
   const subscriptionServer = new SubscriptionServer({
-    execute,
+    execute(schema, doc, root, _ctx, variables, operationName) {
+      return execute(schema, doc, root, database, variables, operationName)
+    },
     schema,
     subscribe(schema, doc, root, _ctx, variables, operationName) {
       return subscribe(schema, doc, root, database, variables, operationName)
