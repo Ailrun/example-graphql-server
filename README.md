@@ -30,7 +30,7 @@
     
 ## Change log
 
-See [CHANGELOG.md](https://github.com/ailrun/example-graphql-server/CHANGELOG.md)
+See [CHANGELOG.md](https://github.com/ailrun/example-graphql-server/blob/master/CHANGELOG.md)
 
 ## Author
 
@@ -39,4 +39,4 @@ See [CHANGELOG.md](https://github.com/ailrun/example-graphql-server/CHANGELOG.md
 
 ## LICENSE
 
-[MIT](https://github.com/ailrun/example-graphql-server/LICENSE)
+[MIT](https://github.com/Ailrun/example-graphql-server/blob/master/LICENSE)
