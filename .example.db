@@ -7,3 +7,5 @@
 {"type":"COMMENT","authorId":"NcupFzQjjOPUcIZ1","postId":"siFjxgasipl8PmaV","contents":"Hi I'm comment!!!","_id":"eMR6a0qVQPJsD4Ur","createdAt":{"$$date":1511749227005},"updatedAt":{"$$date":1511749227005}}
 {"type":"COMMENT","authorId":"HOWaXm6XoPZb8Dut","postId":"siFjxgasipl8PmaV","contents":"Hello!","_id":"ma5jY8mlArtBdIl2","createdAt":{"$$date":1511748823405},"updatedAt":{"$$date":1511748823405}}
 {"type":"POST","authorId":"NcupFzQjjOPUcIZ1","title":"GraphQL introduction","contents":"Use GraphQL!!!","_id":"siFjxgasipl8PmaV","createdAt":{"$$date":1511747804185},"updatedAt":{"$$date":1511747804185}}
+{"type":"POST","authorId":"HZvJmgSz83jfhoYP","title":"Goodbye couple","contents":"Kick him off","_id":"0HVw80VSPCafA0LD","createdAt":{"$$date":1511767457305},"updatedAt":{"$$date":1511767457305}}
+{"type":"POST","authorId":"HZvJmgSz83jfhoYP","title":"From Couple to Solo","contents":"There's no king's way","_id":"uKjHB08j34jjizzV","createdAt":{"$$date":1511767501555},"updatedAt":{"$$date":1511767501555}}
