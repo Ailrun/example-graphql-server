@@ -2,10 +2,13 @@
 
 ### Added
 > Nothing
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 > Nothing
 
@@ -14,11 +17,14 @@
 
 ### Added
 > Nothing
+
 ### Deleted
 - User does not have `point` property in DB
+
 ### Fixed
 - `uuid` is renamed to `id` to be compatible with graphql client caching
 - Undefined context in query via ws is fixed
+
 ### Misc
 > Nothing
 
@@ -27,10 +33,13 @@
 
 ### Added
 - Now CORS request is supported
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 - More example data is added
 
@@ -39,10 +48,13 @@
 
 ### Added
 > Nothing
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 - Remove debug log
 
@@ -52,10 +64,13 @@
 ### Added
 - `Post` and `Comment` types are added
 - Now `uuid` of each type is queryable
+
 ### Deleted
 > Nothing
+
 ### Fixed
 - Undefined context in subscription is fixed
+
 ### Misc
 - Server depends on **lodash**
 
@@ -64,10 +79,13 @@
 
 ### Added
 - Logger for graphql requests is added
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 - Code styles is changed
 
@@ -76,10 +94,13 @@
 
 ### Added
 > Nothing
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 - Package is linked with Github
 
@@ -88,9 +109,12 @@
 
 ### Added
 - Example for subscription query is added
+
 ### Deleted
 > Nothing
+
 ### Fixed
 > Nothing
+
 ### Misc
 > Nothing
