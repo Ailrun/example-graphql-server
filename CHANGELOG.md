@@ -12,6 +12,21 @@
 ### Misc
 > Nothing
 
+## v1.4.1
+### Release Date: 2017/11/27
+
+### Added
+> Nothing
+
+### Deleted
+> Nothing
+
+### Fixed
+- Windows style linefeed (`^M`) is fixed.
+
+### Misc
+> Nothing
+
 ## v1.4.0
 ### Release Date: 2017/11/27
 
