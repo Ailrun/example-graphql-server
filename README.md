@@ -23,9 +23,11 @@
     ```
 - when you install this as project-local package
     ``` shell
-    $ npm run example-graphql-server
-    # or 
+    $ ./node_modules/.bin/example-graphql-server
+    # or
     $ yarn example-graphql-server
+    # or after adding `"example": "example-graphql-server"` to "scripts" of package.json
+    $ npm run example
     ```
     
 ## Change log
