@@ -12,6 +12,21 @@
 ### Misc
 > Nothing
 
+## v1.4.2
+### Release Date: 2017/12/18
+
+### Added
+> Nothing
+
+### Deleted
+> Nothing
+
+### Fixed
+> Nothing
+
+### Misc
+> Fix README.md
+
 ## v1.4.1
 ### Release Date: 2017/11/27
 
